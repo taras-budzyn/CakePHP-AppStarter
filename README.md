@@ -1,9 +1,17 @@
 # CakePHP Application Starter
 
-[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+master
+
 [![Build Status](https://travis-ci.org/taras-budzyn/CakePHP-AppStarter.svg?branch=dev)](https://travis-ci.org/taras-budzyn/CakePHP-AppStarter)
 [![codecov](https://codecov.io/gh/taras-budzyn/CakePHP-AppStarter/branch/dev/graph/badge.svg)](https://codecov.io/gh/taras-budzyn/CakePHP-AppStarter)
 [![Code Climate](https://codeclimate.com/github/taras-budzyn/CakePHP-AppStarter/badges/gpa.svg)](https://codeclimate.com/github/taras-budzyn/CakePHP-AppStarter)
+[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
+___
+dev
+
+[![Build Status](https://travis-ci.org/taras-budzyn/CakePHP-AppStarter.svg?branch=master)](https://travis-ci.org/taras-budzyn/CakePHP-AppStarter)
+[![codecov](https://codecov.io/gh/taras-budzyn/CakePHP-AppStarter/branch/master/graph/badge.svg)](https://codecov.io/gh/taras-budzyn/CakePHP-AppStarter)
+
 
 The base for creating applications with [CakePHP](http://cakephp.org) 3.3.x.
 
