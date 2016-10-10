@@ -1,0 +1,26 @@
+#
+# This codecov.yml is the default configuration for
+# all repositories on Codecov. You may adjust the settings
+# below in your own codecov.yml in your repository.
+#
+coverage:
+  precision: 2
+  round: down
+  range: 70...100
+
+  status:
+    project:
+      default:
+        target: auto
+        branches:
+        - master
+        - dev
+    patch: true
+    changes: false
+
+comment:
+  layout: "header, diff"
+  behavior: default  # update if exists else create new
+ignore:
+  - "src/Shell/ConsoleShell.php"
+  - "src/Console/Installer.php"
