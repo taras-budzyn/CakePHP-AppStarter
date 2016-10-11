@@ -152,7 +152,25 @@ if (!Configure::read('App.fullBaseUrl')) {
 }
 
 Cache::config(Configure::consume('Cache'));
-ConnectionManager::config(Configure::consume('Datasources'));
+// set custom database configs from travis configuration
+if (getenv('db_dsn')) {
+  $travisDBConfig = [
+		'className' => 'Cake\Database\Connection',
+		'driver' => getenv('db_class'),
+		'dsn' => getenv('db_dsn'),
+		'database' => getenv('db_database'),
+		'username' => getenv('db_username'),
+		'password' => getenv('db_password'),
+		'timezone' => 'UTC',
+		'quoteIdentifiers' => true,
+		'cacheMetadata' => true,
+    'unix_socket' => '/var/run/mysqld/mysqld.sock'
+	];
+  Cake\Datasource\ConnectionManager::config('default', $travisDBConfig);
+	Cake\Datasource\ConnectionManager::config('test', $travisDBConfig);
+} else {
+  ConnectionManager::config(Configure::consume('Datasources'));
+}
 Email::configTransport(Configure::consume('EmailTransport'));
 Email::config(Configure::consume('Email'));
 Log::config(Configure::consume('Log'));

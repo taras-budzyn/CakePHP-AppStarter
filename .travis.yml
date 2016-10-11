@@ -5,11 +5,22 @@ dist: trusty
 php:
   - 5.6
 
+services:
+  - mysql
+
+env:
+  matrix:
+    - DB=mysql db_class='Cake\Database\Driver\Mysql' db_dsn='mysql:host=127.0.0.1;dbname=cakephp_test' db_database='cakephp_test' db_username='travis' db_password=''
+  global:
+    - DEFAULT=1
+
 matrix:
   fast_finish: true
 
 before_script:
   - composer install
+  - sh -c "mysql -e 'CREATE DATABASE cakephp_test;'"
+  - sh -c "bin/cake migrations migrate --connection test"
 
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.xml
