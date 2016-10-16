@@ -19,10 +19,6 @@
             <td><?= h($user->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($user->password) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Name') ?></th>
             <td><?= h($user->name) ?></td>
         </tr>
@@ -32,7 +28,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Type') ?></th>
-            <td><?= $this->Number->format($user->type) ?></td>
+            <td><?= $user::statuses($user->type) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

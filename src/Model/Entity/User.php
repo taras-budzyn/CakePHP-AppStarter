@@ -1,7 +1,8 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\ORM\Entity;
+use Tools\Model\Entity\Entity;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * User Entity
@@ -19,6 +20,9 @@ use Cake\ORM\Entity;
  */
 class User extends Entity
 {
+    const SUPERADMIN = 2;
+    const MANAGER = 1;
+    const USER = 0;
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -46,5 +50,19 @@ class User extends Entity
     protected function _setPassword($password)
     {
         return (new DefaultPasswordHasher)->hash($password);
+    }
+    
+    
+    /*
+     * static enum: Model::function()
+     * @access static
+     */
+    public static function statuses($value = null) {
+        $options = array(
+            self::SUPERADMIN => __('superadmin', true),
+            self::MANAGER => __('manager', true),
+            self::USER => __('user', true)
+        );
+        return parent::enum($value, $options);
     }
 }
