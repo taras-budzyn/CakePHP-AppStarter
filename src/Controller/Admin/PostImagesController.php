@@ -1,14 +1,14 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AdminController;
 
 /**
  * PostImages Controller
  *
  * @property \App\Model\Table\PostImagesTable $PostImages
  */
-class PostImagesController extends AppController
+class PostImagesController extends AdminController
 {
 
     /**

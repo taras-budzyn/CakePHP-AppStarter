@@ -29,7 +29,7 @@ Framework with basic admin panel, posts, categories, users and tags (like simple
 
   `bin/cake migrations migrate`
 
-Also it will create SuperAdmin user, so it will allow to access to Admin panel of site.
+Also it will create SuperAdmin user, so it will allow to access to Admin panel of site (email - admin@admin; pass - admin).
 **NOTE:** You should change the password of this user or create new superadmin when will deploy site to production.
 
 

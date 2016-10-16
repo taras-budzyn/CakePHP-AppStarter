@@ -1,14 +1,14 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AdminController;
 
 /**
  * Permissions Controller
  *
  * @property \App\Model\Table\PermissionsTable $Permissions
  */
-class PermissionsController extends AppController
+class PermissionsController extends AdminController
 {
 
     /**

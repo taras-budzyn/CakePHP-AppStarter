@@ -1,14 +1,14 @@
 <?php
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use App\Controller\Admin\AdminController;
 
 /**
  * PostTags Controller
  *
  * @property \App\Model\Table\PostTagsTable $PostTags
  */
-class PostTagsController extends AppController
+class PostTagsController extends AdminController
 {
 
     /**
