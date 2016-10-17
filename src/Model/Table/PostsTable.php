@@ -70,6 +70,10 @@ class PostsTable extends Table
         $validator
             ->integer('id')
             ->allowEmpty('id', 'create');
+        
+        $validator
+            ->integer('category_id')
+            ->notEmpty('category_id', 'A category is required');
 
         $validator
             ->allowEmpty('title');

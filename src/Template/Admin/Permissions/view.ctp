@@ -28,7 +28,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Rule') ?></th>
-            <td><?= $this->Number->format($permission->rule) ?></td>
+            <td><?= $permission::statuses($permission->rule) ?></td>
         </tr>
     </table>
 </div>

@@ -15,7 +15,7 @@
         <?php
             echo $this->Form->input('user_id', ['options' => $users]);
             echo $this->Form->input('category_id', ['options' => $categories]);
-            echo $this->Form->input('rule');
+            echo $this->Form->input('rule', array('options' => $permission::statuses()));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

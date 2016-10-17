@@ -26,7 +26,7 @@
                 <td><?= $this->Number->format($permission->id) ?></td>
                 <td><?= $permission->has('user') ? $this->Html->link($permission->user->name, ['controller' => 'Users', 'action' => 'view', $permission->user->id]) : '' ?></td>
                 <td><?= $permission->has('category') ? $this->Html->link($permission->category->title, ['controller' => 'Categories', 'action' => 'view', $permission->category->id]) : '' ?></td>
-                <td><?= $this->Number->format($permission->rule) ?></td>
+                <td><?= $permission::statuses($permission->rule) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $permission->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $permission->id]) ?>

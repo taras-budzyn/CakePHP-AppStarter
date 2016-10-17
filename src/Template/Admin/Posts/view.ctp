@@ -40,7 +40,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Status') ?></th>
-            <td><?= $this->Number->format($post->status) ?></td>
+            <td><?= $post::statuses($post->rule) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>

@@ -28,7 +28,7 @@
             echo $this->Form->input('title');
             echo $this->Form->input('description');
             echo $this->Form->input('url');
-            echo $this->Form->input('status');
+            echo $this->Form->input('status', array('options' => $post::statuses()));
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

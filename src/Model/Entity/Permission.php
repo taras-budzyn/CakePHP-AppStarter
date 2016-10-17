@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\ORM\Entity;
+use Tools\Model\Entity\Entity;
 
 /**
  * Permission Entity
@@ -16,6 +16,8 @@ use Cake\ORM\Entity;
  */
 class Permission extends Entity
 {
+    const FULL = 2;
+    const MANAGER = 1;
 
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
@@ -30,4 +32,16 @@ class Permission extends Entity
         '*' => true,
         'id' => false
     ];
+    
+    /*
+    * static enum: Model::function()
+    * @access static
+    */
+    public static function statuses($value = null) {
+        $options = array(
+            self::FULL => __('full', true),
+            self::MANAGER => __('manager', true)
+        );
+        return parent::enum($value, $options);
+    }
 }

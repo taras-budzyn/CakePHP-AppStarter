@@ -1,7 +1,7 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\ORM\Entity;
+use Tools\Model\Entity\Entity;
 
 /**
  * Post Entity
@@ -24,6 +24,9 @@ use Cake\ORM\Entity;
 class Post extends Entity
 {
 
+    const ACTIVE = 1;
+    const DISABLED = 0;
+    
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -37,4 +40,16 @@ class Post extends Entity
         '*' => true,
         'id' => false
     ];
+    
+    /*
+    * static enum: Model::function()
+    * @access static
+    */
+    public static function statuses($value = null) {
+        $options = array(
+            self::ACTIVE => __('active', true),
+            self::DISABLED => __('disabled', true)
+        );
+        return parent::enum($value, $options);
+    }
 }
