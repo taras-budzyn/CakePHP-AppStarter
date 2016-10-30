@@ -36,7 +36,7 @@
                 <td><?= $post->has('category') ? $this->Html->link($post->category->title, ['controller' => 'Categories', 'action' => 'view', $post->category->id]) : '' ?></td>
                 <td><?= h($post->title) ?></td>
                 <td><?= h($post->url) ?></td>
-                <td><?= $post::statuses($post->rule) ?></td>
+                <td><?= $post::statuses($post->status) ?></td>
                 <td><?= h($post->created) ?></td>
                 <td><?= h($post->modified) ?></td>
                 <td class="actions">
