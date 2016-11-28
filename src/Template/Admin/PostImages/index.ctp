@@ -11,15 +11,16 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('image_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('image_url') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('post_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($postImages as $postImage): ?>
+              
             <tr>
-                <td><?= $this->Number->format($postImage->image_id) ?></td>
+                <td><?= $postImage->url ?></td>
                 <td><?= $postImage->has('post') ? $this->Html->link($postImage->post->title, ['controller' => 'Posts', 'action' => 'view', $postImage->post->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $postImage->image_id]) ?>

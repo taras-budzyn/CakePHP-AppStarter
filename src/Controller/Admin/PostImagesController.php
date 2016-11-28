@@ -53,13 +53,25 @@ class PostImagesController extends AdminController
     {
         $postImage = $this->PostImages->newEntity();
         if ($this->request->is('post')) {
-            $postImage = $this->PostImages->patchEntity($postImage, $this->request->data);
-            if ($this->PostImages->save($postImage)) {
-                $this->Flash->success(__('The post image has been saved.'));
+            $allowed_ext = ["image/jpeg", "image/png", "image/gif"];
+            
+            $photo = $this->request->data['post_photo'];
+            if (in_array($photo["type"], $allowed_ext)) {
+                $fullUrl = '/uploads/img/articles/' . time() . '_' . $photo["name"];
+                move_uploaded_file($photo['tmp_name'], WWW_ROOT . $fullUrl);
+                $postImage->url = $fullUrl;
+                
+                $postImage = $this->PostImages->patchEntity($postImage, $this->request->data);
+                if ($this->PostImages->save($postImage)) {
+                    $this->Flash->success(__('The post image has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                    return $this->redirect(['action' => 'index']);
+                } else {
+                    $this->Flash->error(__('The post image could not be saved. Please, try again.'));
+                }
+                
             } else {
-                $this->Flash->error(__('The post image could not be saved. Please, try again.'));
+              $this->Flash->error(__('You can\'t upload this type of file.'));
             }
         }
         $posts = $this->PostImages->Posts->find('list', ['limit' => 200]);
