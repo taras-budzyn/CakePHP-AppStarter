@@ -59,6 +59,11 @@ class PostsController extends AdminController
             }
             $post = $this->Posts->patchEntity($post, $this->request->data);
             $post->tags = $tagsArr;
+            
+            if (!$post->url) {
+              $post->url = $this->transliterate($post->title);
+            }
+            
             if ($this->Posts->save($post)) {
                 $this->Flash->success(__('The post has been saved.'));
 
@@ -92,11 +97,18 @@ class PostsController extends AdminController
         }
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tagsArr = [];
-            foreach ($this->request->data['tags'] as $tag) {
-              $tagsArr[] = $this->Posts->Tags->get((int) $tag);
+            if ($this->request->data['tags']) {
+                foreach ($this->request->data['tags'] as $tag) {
+                  $tagsArr[] = $this->Posts->Tags->get((int) $tag);
+                }
             }
             $post = $this->Posts->patchEntity($post, $this->request->data);
             $post->tags = $tagsArr;
+            
+            if (!$post->url) {
+              $post->url = $this->transliterate($post->title);
+            }
+            
             if ($this->Posts->save($post)) {
                 $this->Flash->success(__('The post has been saved.'));
 
@@ -130,5 +142,18 @@ class PostsController extends AdminController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+    
+    private function transliterate($inputText = "") {
+      $outputText = "";
+      $outputText = preg_replace("/[^[:alnum:][:space:]]/u", '', $inputText);
+      $cyr = array(
+        'ж',  'ч',  'щ',   'ш',  'ю',  'а', 'б', 'в', 'г', 'д', 'е', 'з', 'і', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ъ', 'ь', 'я',
+        'Ж',  'Ч',  'Щ',   'Ш',  'Ю',  'А', 'Б', 'В', 'Г', 'Д', 'Е', 'З', 'І', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ъ', 'Ь', 'Я');
+      $lat = array(
+        'zh', 'ch', 'sht', 'sh', 'yu', 'a', 'b', 'v', 'g', 'd', 'e', 'z', 'i', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'y', 'x', 'q',
+        'Zh', 'Ch', 'Sht', 'Sh', 'Yu', 'A', 'B', 'V', 'G', 'D', 'E', 'Z', 'I', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'c', 'Y', 'X', 'Q');
+      $outputText = str_replace($cyr, $lat, $outputText);
+      return str_replace(" ", "-", $outputText);
     }
 }

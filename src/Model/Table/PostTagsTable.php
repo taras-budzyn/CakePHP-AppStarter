@@ -33,7 +33,7 @@ class PostTagsTable extends Table
     {
         parent::initialize($config);
 
-        $this->table('post_tags');
+        $this->table('posts_tags');
         $this->displayField('post_id');
         $this->primaryKey(['post_id', 'tag_id']);
 

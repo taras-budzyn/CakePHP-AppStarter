@@ -34,7 +34,7 @@ class PostsController extends AppController
      * @return \Cake\Network\Response|null
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view($slug = null, $id = null)
     {
         $post = $this->Posts->get($id, [
             'contain' => ['Users', 'Categories', 'PostImages', 'PostTags']

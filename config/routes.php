@@ -48,6 +48,7 @@ Router::scope(
     ['controller' => 'Posts'],
     function ($routes) {
         $routes->connect('/tagged/*', ['action' => 'tags']);
+        $routes->connect('/article/:slug-:id', ['action' => 'view'], ['pass' => array('slug' , 'id'), 'id' => '[0-9]+']);
     }
 );
 
