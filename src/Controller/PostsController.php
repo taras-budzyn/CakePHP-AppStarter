@@ -43,4 +43,23 @@ class PostsController extends AppController
         $this->set('post', $post);
         $this->set('_serialize', ['post']);
     }
+    
+    public function tags()
+    {
+        // The 'pass' key is provided by CakePHP and contains all
+        // the passed URL path segments in the request.
+        $tags = $this->request->params['pass'];
+
+        $posts = $this->Posts->find('tagged', [
+            'tags' => $tags
+        ]);
+        
+        $posts = $this->paginate($posts);
+        
+        // Pass variables into the view template context.
+        $this->set([
+            'posts' => $posts,
+            'tags' => $tags
+        ]);
+    }
 }

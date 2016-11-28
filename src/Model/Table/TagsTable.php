@@ -43,6 +43,11 @@ class TagsTable extends Table
         $this->hasMany('PostTags', [
             'foreignKey' => 'tag_id'
         ]);
+        $this->belongsToMany('Posts', [
+          'foreignKey' => 'tag_id',
+          'targetForeignKey' => 'post_id',
+          'joinTable' => 'posts_tags'
+        ]);
     }
 
     /**

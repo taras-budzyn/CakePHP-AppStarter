@@ -57,6 +57,12 @@ class PostsTable extends Table
         $this->hasMany('PostTags', [
             'foreignKey' => 'post_id'
         ]);
+        $this->belongsToMany('Tags', [
+          'foreignKey' => 'post_id',
+          'targetForeignKey' => 'tag_id',
+          'joinTable' => 'posts_tags'
+        ]);
+        
     }
 
     /**
@@ -105,5 +111,23 @@ class PostsTable extends Table
         $rules->add($rules->existsIn(['category_id'], 'Categories'));
 
         return $rules;
+    }
+    
+    // The $query argument is a query builder instance.
+    // The $options array will contain the 'tags' option we passed
+    // to find('tagged') in our controller action.
+    public function findTagged(Query $query, array $options)
+    {
+        $obj = null;
+        $obj = $this->find()->distinct(['Posts.id']);
+        if (empty($options['tags'])) {
+          $obj->notMatching('Tags');
+        } else {
+          $obj->matching('Tags', function ($q) use ($options) {
+              return $q->where(['Tags.title IN' => $options['tags']]);
+          });
+        }
+        
+        return $obj;
     }
 }

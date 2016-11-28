@@ -31,6 +31,18 @@
             echo $this->Form->input('status', array('options' => $post::statuses()));
         ?>
     </fieldset>
+    <fieldset>
+		    <legend><?php __('Tags');?></legend>
+		    <?php
+      		echo $this->Form->input('tags', array(
+      			'label' => __('Tags', true),
+      			'type' => 'select',
+      			'multiple' => 'checkbox',
+      			'options' => $tags,
+            'value' => $post->selectedTagsArr
+      		));
+    		?>
+    </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
 </div>

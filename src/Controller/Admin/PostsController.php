@@ -53,7 +53,12 @@ class PostsController extends AdminController
     {
         $post = $this->Posts->newEntity();
         if ($this->request->is('post')) {
+            $tagsArr = [];
+            foreach ($this->request->data['tags'] as $tag) {
+              $tagsArr[] = $this->Posts->Tags->get((int) $tag);
+            }
             $post = $this->Posts->patchEntity($post, $this->request->data);
+            $post->tags = $tagsArr;
             if ($this->Posts->save($post)) {
                 $this->Flash->success(__('The post has been saved.'));
 
@@ -64,7 +69,8 @@ class PostsController extends AdminController
         }
         $users = $this->Posts->Users->find('list', ['limit' => 200]);
         $categories = $this->Posts->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('post', 'users', 'categories'));
+        $tags = $this->Posts->Tags->find('list', ['limit' => 200]);
+        $this->set(compact('post', 'users', 'categories', 'tags'));
         $this->set('_serialize', ['post']);
     }
 
@@ -78,10 +84,19 @@ class PostsController extends AdminController
     public function edit($id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => []
+            'contain' => ['Tags']
         ]);
+        $post->selectedTagsArr = [];
+        foreach ($post->tags as $tag) {
+            $post->selectedTagsArr[] = $tag->id;
+        }
         if ($this->request->is(['patch', 'post', 'put'])) {
+            $tagsArr = [];
+            foreach ($this->request->data['tags'] as $tag) {
+              $tagsArr[] = $this->Posts->Tags->get((int) $tag);
+            }
             $post = $this->Posts->patchEntity($post, $this->request->data);
+            $post->tags = $tagsArr;
             if ($this->Posts->save($post)) {
                 $this->Flash->success(__('The post has been saved.'));
 
@@ -92,7 +107,8 @@ class PostsController extends AdminController
         }
         $users = $this->Posts->Users->find('list', ['limit' => 200]);
         $categories = $this->Posts->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('post', 'users', 'categories'));
+        $tags = $this->Posts->Tags->find('list', ['limit' => 200]);
+        $this->set(compact('post', 'users', 'categories', 'tags'));
         $this->set('_serialize', ['post']);
     }
 

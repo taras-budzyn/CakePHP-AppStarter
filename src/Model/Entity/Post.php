@@ -38,6 +38,7 @@ class Post extends Entity
      */
     protected $_accessible = [
         '*' => true,
+        'tags' => true,
         'id' => false
     ];
     
