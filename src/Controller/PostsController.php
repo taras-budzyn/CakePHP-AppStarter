@@ -19,7 +19,7 @@ class PostsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users', 'Categories']
+            'contain' => ['Users', 'Categories', 'PostImages']
         ];
         $posts = $this->paginate($this->Posts);
 
@@ -37,7 +37,7 @@ class PostsController extends AppController
     public function view($slug = null, $id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => ['Users', 'Categories', 'PostImages', 'PostTags']
+            'contain' => ['Users', 'Categories', 'PostImages', 'Tags']
         ]);
 
         $this->set('post', $post);

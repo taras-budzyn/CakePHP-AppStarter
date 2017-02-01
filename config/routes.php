@@ -48,7 +48,7 @@ Router::scope(
     ['controller' => 'Posts'],
     function ($routes) {
         $routes->connect('/tagged/*', ['action' => 'tags']);
-        $routes->connect('/article/:slug-:id', ['action' => 'view'], ['pass' => array('slug' , 'id'), 'id' => '[0-9]+']);
+        $routes->connect('/:slug-:id', ['action' => 'view'], ['pass' => array('slug' , 'id'), 'id' => '[0-9]+']);
     }
 );
 
@@ -58,7 +58,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'Posts', 'action' => 'index', 'home']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
