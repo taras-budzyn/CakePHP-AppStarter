@@ -45,21 +45,21 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
           <?php if ($this->request->Session()->read('Auth.User')): ?>
             <ul class="left">
                 <li class="name">
-                    <a href="/admin/posts">Posts</a>
+                    <a href="/admin/posts"><?= __('Posts'); ?></a>
                 </li>
                 <li class="name">
-                    <a href="/admin/users">Users</a>
+                    <a href="/admin/users"><?= __('Users'); ?></a>
                 </li>
                 <li class="name">
-                    <a href="/admin/categories">Categories</a>
+                    <a href="/admin/categories"><?= __('Categories'); ?></a>
                 </li>
                 <li class="name">
-                    <a href="/admin/tags">Tags</a>
+                    <a href="/admin/tags"><?= __('Tags'); ?></a>
                 </li>
             </ul>
             <ul class="right">
-                <li><a target="_blank" href="/">Open site</a></li>
-                <li><a href="/admin/users/logout">Logout</a></li>
+                <li><a target="_blank" href="/"><?= __('Open site'); ?></a></li>
+                <li><a href="/admin/users/logout"><?= __('Logout'); ?></a></li>
             </ul>
           <?php endif; ?>
         </div>

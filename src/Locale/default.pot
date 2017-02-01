@@ -1,0 +1,914 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-02-01 17:42+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/Admin/CategoriesController.php:55;81
+msgid "The category has been saved."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:59;85
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:106
+msgid "The category has been deleted."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:108
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:111
+msgid "The category could not be deleted. You have posts assigned to this category."
+msgstr ""
+
+#: Controller/Admin/CategoriesController.php:114
+msgid "The category could not be deleted. It's the parent category."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:58;86
+msgid "The permission has been saved."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:62;90
+msgid "The permission could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:111
+msgid "The permission has been deleted."
+msgstr ""
+
+#: Controller/Admin/PermissionsController.php:113
+msgid "The permission could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostImagesController.php:66;97
+msgid "The post image has been saved."
+msgstr ""
+
+#: Controller/Admin/PostImagesController.php:70;101
+msgid "The post image could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostImagesController.php:74
+msgid "You can't upload this type of file."
+msgstr ""
+
+#: Controller/Admin/PostImagesController.php:121
+msgid "The post image has been deleted."
+msgstr ""
+
+#: Controller/Admin/PostImagesController.php:123
+msgid "The post image could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostTagsController.php:58;86
+msgid "The post tag has been saved."
+msgstr ""
+
+#: Controller/Admin/PostTagsController.php:62;90
+msgid "The post tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostTagsController.php:111
+msgid "The post tag has been deleted."
+msgstr ""
+
+#: Controller/Admin/PostTagsController.php:113
+msgid "The post tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:68;113
+msgid "The post has been saved."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:72;117
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:139
+msgid "The post has been deleted."
+msgstr ""
+
+#: Controller/Admin/PostsController.php:141
+msgid "The post could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/TagsController.php:55;81
+msgid "The tag has been saved."
+msgstr ""
+
+#: Controller/Admin/TagsController.php:59;85
+msgid "The tag could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/TagsController.php:104
+msgid "The tag has been deleted."
+msgstr ""
+
+#: Controller/Admin/TagsController.php:106
+msgid "The tag could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:35
+msgid "Invalid username or password, try again"
+msgstr ""
+
+#: Controller/Admin/UsersController.php:72;98
+msgid "The user has been saved."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:76;102
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:121
+msgid "The user has been deleted."
+msgstr ""
+
+#: Controller/Admin/UsersController.php:123
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: Model/Entity/Permission.php:42
+msgid "full"
+msgstr ""
+
+#: Model/Entity/Permission.php:43
+#: Model/Entity/User.php:63
+msgid "manager"
+msgstr ""
+
+#: Model/Entity/Post.php:51
+msgid "active"
+msgstr ""
+
+#: Model/Entity/Post.php:52
+msgid "disabled"
+msgstr ""
+
+#: Model/Entity/User.php:62
+msgid "superadmin"
+msgstr ""
+
+#: Model/Entity/User.php:64
+msgid "user"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:3
+#: Template/Admin/Categories/edit.ctp:3
+#: Template/Admin/Categories/index.ctp:3;23
+#: Template/Admin/Categories/view.ctp:3;59;91
+#: Template/Admin/Permissions/add.ctp:3
+#: Template/Admin/Permissions/edit.ctp:3
+#: Template/Admin/Permissions/index.ctp:3;20
+#: Template/Admin/Permissions/view.ctp:3
+#: Template/Admin/PostImages/add.ctp:3
+#: Template/Admin/PostImages/edit.ctp:3
+#: Template/Admin/PostImages/index.ctp:3;16
+#: Template/Admin/PostImages/view.ctp:3
+#: Template/Admin/PostTags/add.ctp:3
+#: Template/Admin/PostTags/edit.ctp:3
+#: Template/Admin/PostTags/index.ctp:3;18
+#: Template/Admin/PostTags/view.ctp:3
+#: Template/Admin/Posts/add.ctp:3
+#: Template/Admin/Posts/edit.ctp:3
+#: Template/Admin/Posts/index.ctp:3;28
+#: Template/Admin/Posts/view.ctp:3;66;90
+#: Template/Admin/Tags/add.ctp:3
+#: Template/Admin/Tags/edit.ctp:3
+#: Template/Admin/Tags/index.ctp:3;18
+#: Template/Admin/Tags/view.ctp:3;39
+#: Template/Admin/Users/add.ctp:3
+#: Template/Admin/Users/edit.ctp:3
+#: Template/Admin/Users/index.ctp:3;22
+#: Template/Admin/Users/view.ctp:3;51;83
+#: Template/Categories/index.ctp:3;23
+#: Template/Categories/view.ctp:3;59;91
+#: Template/Posts/tags.ctp:3;28
+#: Template/Tags/index.ctp:3;18
+#: Template/Tags/view.ctp:3;39
+#: Template/Users/index.ctp:3;23
+#: Template/Users/view.ctp:3;55;87
+msgid "Actions"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:4
+#: Template/Admin/Categories/edit.ctp:10
+#: Template/Admin/Categories/view.ctp:6
+#: Template/Admin/Permissions/add.ctp:7
+#: Template/Admin/Permissions/edit.ctp:13
+#: Template/Admin/Permissions/index.ctp:7
+#: Template/Admin/Permissions/view.ctp:10
+#: Template/Admin/Posts/add.ctp:7
+#: Template/Admin/Posts/edit.ctp:13
+#: Template/Admin/Posts/index.ctp:7
+#: Template/Admin/Posts/view.ctp:10
+#: Template/Categories/view.ctp:6
+#: Template/Posts/tags.ctp:7
+msgid "List Categories"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:5
+#: Template/Admin/Categories/edit.ctp:11
+#: Template/Admin/Categories/index.ctp:5
+#: Template/Admin/Categories/view.ctp:8
+#: Template/Admin/Permissions/add.ctp:4
+#: Template/Admin/Permissions/edit.ctp:10
+#: Template/Admin/Permissions/view.ctp:6
+#: Template/Admin/Users/add.ctp:5
+#: Template/Admin/Users/edit.ctp:11
+#: Template/Admin/Users/index.ctp:5
+#: Template/Admin/Users/view.ctp:8
+#: Template/Categories/index.ctp:5
+#: Template/Categories/view.ctp:8
+#: Template/Users/index.ctp:5
+#: Template/Users/view.ctp:8
+msgid "List Permissions"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:6
+#: Template/Admin/Categories/edit.ctp:12
+#: Template/Admin/Categories/index.ctp:6
+#: Template/Admin/Categories/view.ctp:9
+#: Template/Admin/Permissions/index.ctp:4
+#: Template/Admin/Permissions/view.ctp:7
+#: Template/Admin/Users/add.ctp:6
+#: Template/Admin/Users/edit.ctp:12
+#: Template/Admin/Users/index.ctp:6
+#: Template/Admin/Users/view.ctp:9
+#: Template/Categories/index.ctp:6
+#: Template/Categories/view.ctp:9
+#: Template/Users/index.ctp:6
+#: Template/Users/view.ctp:9
+msgid "New Permission"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:7
+#: Template/Admin/Categories/edit.ctp:13
+#: Template/Admin/Categories/index.ctp:7
+#: Template/Admin/Categories/view.ctp:10
+#: Template/Admin/PostImages/add.ctp:5
+#: Template/Admin/PostImages/edit.ctp:11
+#: Template/Admin/PostImages/index.ctp:5
+#: Template/Admin/PostImages/view.ctp:8
+#: Template/Admin/PostTags/add.ctp:5
+#: Template/Admin/PostTags/edit.ctp:11
+#: Template/Admin/PostTags/index.ctp:5
+#: Template/Admin/PostTags/view.ctp:8
+#: Template/Admin/Posts/add.ctp:4
+#: Template/Admin/Posts/edit.ctp:10
+#: Template/Admin/Posts/view.ctp:6
+#: Template/Admin/Users/add.ctp:7
+#: Template/Admin/Users/edit.ctp:13
+#: Template/Admin/Users/index.ctp:7
+#: Template/Admin/Users/view.ctp:10
+#: Template/Categories/index.ctp:7
+#: Template/Categories/view.ctp:10
+#: Template/Users/index.ctp:7
+#: Template/Users/view.ctp:10
+msgid "List Posts"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:8
+#: Template/Admin/Categories/edit.ctp:14
+#: Template/Admin/Categories/index.ctp:8
+#: Template/Admin/Categories/view.ctp:11
+#: Template/Admin/PostImages/add.ctp:6
+#: Template/Admin/PostImages/edit.ctp:12
+#: Template/Admin/PostImages/index.ctp:6
+#: Template/Admin/PostImages/view.ctp:9
+#: Template/Admin/PostTags/add.ctp:6
+#: Template/Admin/PostTags/edit.ctp:12
+#: Template/Admin/PostTags/index.ctp:6
+#: Template/Admin/PostTags/view.ctp:9
+#: Template/Admin/Posts/index.ctp:4
+#: Template/Admin/Posts/view.ctp:7
+#: Template/Admin/Users/add.ctp:8
+#: Template/Admin/Users/edit.ctp:14
+#: Template/Admin/Users/index.ctp:8
+#: Template/Admin/Users/view.ctp:11
+#: Template/Categories/index.ctp:8
+#: Template/Categories/view.ctp:11
+#: Template/Posts/tags.ctp:4
+#: Template/Users/index.ctp:8
+#: Template/Users/view.ctp:11
+msgid "New Post"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:14
+msgid "Add Category"
+msgstr ""
+
+#: Template/Admin/Categories/add.ctp:23
+#: Template/Admin/Categories/edit.ctp:29
+#: Template/Admin/Permissions/add.ctp:21
+#: Template/Admin/Permissions/edit.ctp:27
+#: Template/Admin/PostImages/add.ctp:20
+#: Template/Admin/PostImages/edit.ctp:24
+#: Template/Admin/PostTags/add.ctp:18
+#: Template/Admin/PostTags/edit.ctp:24
+#: Template/Admin/Posts/add.ctp:39
+#: Template/Admin/Posts/edit.ctp:46
+#: Template/Admin/Tags/add.ctp:17
+#: Template/Admin/Tags/edit.ctp:23
+#: Template/Admin/Users/add.ctp:22
+#: Template/Admin/Users/edit.ctp:28
+msgid "Submit"
+msgstr ""
+
+#: Template/Admin/Categories/edit.ctp:5
+#: Template/Admin/Categories/index.ctp:39
+#: Template/Admin/Categories/view.ctp:70;107
+#: Template/Admin/Permissions/edit.ctp:5
+#: Template/Admin/Permissions/index.ctp:33
+#: Template/Admin/PostImages/edit.ctp:5
+#: Template/Admin/PostImages/index.ctp:28
+#: Template/Admin/PostTags/edit.ctp:5
+#: Template/Admin/PostTags/index.ctp:29
+#: Template/Admin/Posts/edit.ctp:5
+#: Template/Admin/Posts/index.ctp:45
+#: Template/Admin/Posts/view.ctp:76;99
+#: Template/Admin/Tags/edit.ctp:5
+#: Template/Admin/Tags/index.ctp:31
+#: Template/Admin/Tags/view.ctp:48
+#: Template/Admin/Users/edit.ctp:5
+#: Template/Admin/Users/index.ctp:37
+#: Template/Admin/Users/view.ctp:62;99
+#: Template/Categories/index.ctp:39
+#: Template/Categories/view.ctp:70;107
+#: Template/Tags/index.ctp:31
+#: Template/Tags/view.ctp:48
+#: Template/Users/index.ctp:39
+#: Template/Users/view.ctp:66;103
+msgid "Delete"
+msgstr ""
+
+#: Template/Admin/Categories/edit.ctp:7
+#: Template/Admin/Categories/index.ctp:39
+#: Template/Admin/Categories/view.ctp:5;70;107
+#: Template/Admin/Permissions/edit.ctp:7
+#: Template/Admin/Permissions/index.ctp:33
+#: Template/Admin/Permissions/view.ctp:5
+#: Template/Admin/PostImages/edit.ctp:7
+#: Template/Admin/PostImages/index.ctp:28
+#: Template/Admin/PostImages/view.ctp:5
+#: Template/Admin/PostTags/edit.ctp:7
+#: Template/Admin/PostTags/index.ctp:29
+#: Template/Admin/PostTags/view.ctp:5
+#: Template/Admin/Posts/edit.ctp:7
+#: Template/Admin/Posts/index.ctp:45
+#: Template/Admin/Posts/view.ctp:5;76;99
+#: Template/Admin/Tags/edit.ctp:7
+#: Template/Admin/Tags/index.ctp:31
+#: Template/Admin/Tags/view.ctp:5;48
+#: Template/Admin/Users/edit.ctp:7
+#: Template/Admin/Users/index.ctp:37
+#: Template/Admin/Users/view.ctp:5;62;99
+#: Template/Categories/index.ctp:39
+#: Template/Categories/view.ctp:5;70;107
+#: Template/Tags/index.ctp:31
+#: Template/Tags/view.ctp:5;48
+#: Template/Users/index.ctp:39
+#: Template/Users/view.ctp:5;66;103
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Admin/Categories/edit.ctp:20
+#: Template/Admin/Categories/view.ctp:4
+#: Template/Categories/view.ctp:4
+msgid "Edit Category"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:4
+#: Template/Admin/Categories/view.ctp:7
+#: Template/Admin/Permissions/add.ctp:8
+#: Template/Admin/Permissions/edit.ctp:14
+#: Template/Admin/Permissions/index.ctp:8
+#: Template/Admin/Permissions/view.ctp:11
+#: Template/Admin/Posts/add.ctp:8
+#: Template/Admin/Posts/edit.ctp:14
+#: Template/Admin/Posts/index.ctp:8
+#: Template/Admin/Posts/view.ctp:11
+#: Template/Categories/index.ctp:4
+#: Template/Categories/view.ctp:7
+#: Template/Posts/tags.ctp:8
+msgid "New Category"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:12
+#: Template/Categories/index.ctp:12
+#: Template/Layout/Admin/default.ctp:54
+msgid "Categories"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:37
+#: Template/Admin/Categories/view.ctp:68;105
+#: Template/Admin/Permissions/index.ctp:31
+#: Template/Admin/PostImages/index.ctp:26
+#: Template/Admin/PostTags/index.ctp:27
+#: Template/Admin/Posts/index.ctp:43
+#: Template/Admin/Posts/view.ctp:74;97
+#: Template/Admin/Tags/index.ctp:29
+#: Template/Admin/Tags/view.ctp:46
+#: Template/Admin/Users/index.ctp:35
+#: Template/Admin/Users/view.ctp:60;97
+#: Template/Categories/index.ctp:37
+#: Template/Categories/view.ctp:68;105
+#: Template/Tags/index.ctp:29
+#: Template/Tags/view.ctp:46
+#: Template/Users/index.ctp:37
+#: Template/Users/view.ctp:64;101
+msgid "View"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:38
+#: Template/Admin/Categories/view.ctp:69;106
+#: Template/Admin/Permissions/index.ctp:32
+#: Template/Admin/PostImages/index.ctp:27
+#: Template/Admin/PostTags/index.ctp:28
+#: Template/Admin/Posts/index.ctp:44
+#: Template/Admin/Posts/view.ctp:75;98
+#: Template/Admin/Tags/index.ctp:30
+#: Template/Admin/Tags/view.ctp:47
+#: Template/Admin/Users/index.ctp:36
+#: Template/Admin/Users/view.ctp:61;98
+#: Template/Categories/index.ctp:38
+#: Template/Categories/view.ctp:69;106
+#: Template/Tags/index.ctp:30
+#: Template/Tags/view.ctp:47
+#: Template/Users/index.ctp:38
+#: Template/Users/view.ctp:65;102
+msgid "Edit"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:47
+#: Template/Admin/Permissions/index.ctp:41
+#: Template/Admin/PostImages/index.ctp:36
+#: Template/Admin/PostTags/index.ctp:37
+#: Template/Admin/Posts/index.ctp:53
+#: Template/Admin/Tags/index.ctp:39
+#: Template/Admin/Users/index.ctp:45
+#: Template/Categories/index.ctp:47
+#: Template/Posts/index.ctp:41
+#: Template/Posts/tags.ctp:48
+#: Template/Tags/index.ctp:39
+#: Template/Users/index.ctp:47
+msgid "previous"
+msgstr ""
+
+#: Template/Admin/Categories/index.ctp:49
+#: Template/Admin/Permissions/index.ctp:43
+#: Template/Admin/PostImages/index.ctp:38
+#: Template/Admin/PostTags/index.ctp:39
+#: Template/Admin/Posts/index.ctp:55
+#: Template/Admin/Tags/index.ctp:41
+#: Template/Admin/Users/index.ctp:47
+#: Template/Categories/index.ctp:49
+#: Template/Posts/index.ctp:43
+#: Template/Posts/tags.ctp:50
+#: Template/Tags/index.ctp:41
+#: Template/Users/index.ctp:49
+msgid "next"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:5
+#: Template/Categories/view.ctp:5
+msgid "Delete Category"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:18;85
+#: Template/Admin/Posts/view.ctp:30
+#: Template/Admin/Tags/view.ctp:16
+#: Template/Admin/Users/view.ctp:77
+#: Template/Categories/view.ctp:18;85
+#: Template/Tags/view.ctp:16
+#: Template/Users/view.ctp:81
+msgid "Title"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:22;87
+#: Template/Admin/PostImages/view.ctp:25
+#: Template/Admin/Posts/view.ctp:34;65
+#: Template/Admin/Users/view.ctp:79
+#: Template/Categories/view.ctp:22;87
+#: Template/Users/view.ctp:83
+msgid "Url"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:26;55;82
+#: Template/Admin/Permissions/view.ctp:26
+#: Template/Admin/Posts/view.ctp:38
+#: Template/Admin/Tags/view.ctp:20
+#: Template/Admin/Users/view.ctp:26;47;74
+#: Template/Categories/view.ctp:26;55;82
+#: Template/Tags/view.ctp:20
+#: Template/Users/view.ctp:30;51;78
+msgid "Id"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:30
+#: Template/Categories/view.ctp:30
+msgid "Parent Category"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:34
+#: Template/Categories/view.ctp:34
+msgid "Level"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:38;89
+#: Template/Admin/Posts/view.ctp:46
+#: Template/Admin/Tags/view.ctp:24
+#: Template/Admin/Users/view.ctp:34;81
+#: Template/Categories/view.ctp:38;89
+#: Template/Tags/view.ctp:24
+#: Template/Users/view.ctp:38;85
+msgid "Created"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:42;90
+#: Template/Admin/Posts/view.ctp:50
+#: Template/Admin/Tags/view.ctp:28
+#: Template/Admin/Users/view.ctp:38;82
+#: Template/Categories/view.ctp:42;90
+#: Template/Tags/view.ctp:28
+#: Template/Users/view.ctp:42;86
+msgid "Modified"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:47;86
+#: Template/Admin/Posts/view.ctp:55
+#: Template/Admin/Users/view.ctp:78
+#: Template/Categories/view.ctp:47;86
+#: Template/Users/view.ctp:82
+msgid "Description"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:51
+#: Template/Admin/Users/view.ctp:43
+#: Template/Categories/view.ctp:51
+#: Template/Users/view.ctp:47
+msgid "Related Permissions"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:56;83
+#: Template/Admin/Users/view.ctp:48;75
+#: Template/Categories/view.ctp:56;83
+#: Template/Users/view.ctp:52;79
+msgid "User Id"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:57;84
+#: Template/Admin/Users/view.ctp:49;76
+#: Template/Categories/view.ctp:57;84
+#: Template/Users/view.ctp:53;80
+msgid "Category Id"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:58
+#: Template/Admin/Permissions/view.ctp:30
+#: Template/Admin/Users/view.ctp:50
+#: Template/Categories/view.ctp:58
+#: Template/Users/view.ctp:54
+msgid "Rule"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:78
+#: Template/Admin/Users/view.ctp:70
+#: Template/Categories/view.ctp:78
+#: Template/Users/view.ctp:74
+msgid "Related Posts"
+msgstr ""
+
+#: Template/Admin/Categories/view.ctp:88
+#: Template/Admin/Posts/view.ctp:42
+#: Template/Admin/Users/view.ctp:80
+#: Template/Categories/view.ctp:88
+#: Template/Users/view.ctp:84
+msgid "Status"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:5
+#: Template/Admin/Permissions/edit.ctp:11
+#: Template/Admin/Permissions/index.ctp:5
+#: Template/Admin/Permissions/view.ctp:8
+#: Template/Admin/Posts/add.ctp:5
+#: Template/Admin/Posts/edit.ctp:11
+#: Template/Admin/Posts/index.ctp:5
+#: Template/Admin/Posts/view.ctp:8
+#: Template/Admin/Users/add.ctp:4
+#: Template/Admin/Users/edit.ctp:10
+#: Template/Admin/Users/view.ctp:6
+#: Template/Posts/tags.ctp:5
+#: Template/Users/view.ctp:6
+msgid "List Users"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:6
+#: Template/Admin/Permissions/edit.ctp:12
+#: Template/Admin/Permissions/index.ctp:6
+#: Template/Admin/Permissions/view.ctp:9
+#: Template/Admin/Posts/add.ctp:6
+#: Template/Admin/Posts/edit.ctp:12
+#: Template/Admin/Posts/index.ctp:6
+#: Template/Admin/Posts/view.ctp:9
+#: Template/Admin/Users/index.ctp:4
+#: Template/Admin/Users/view.ctp:7
+#: Template/Posts/tags.ctp:6
+#: Template/Users/index.ctp:4
+#: Template/Users/view.ctp:7
+msgid "New User"
+msgstr ""
+
+#: Template/Admin/Permissions/add.ctp:14
+msgid "Add Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/edit.ctp:20
+#: Template/Admin/Permissions/view.ctp:4
+msgid "Edit Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/index.ctp:12
+msgid "Permissions"
+msgstr ""
+
+#: Template/Admin/Permissions/view.ctp:5
+msgid "Delete Permission"
+msgstr ""
+
+#: Template/Admin/Permissions/view.ctp:18
+#: Template/Admin/Posts/view.ctp:22
+msgid "User"
+msgstr ""
+
+#: Template/Admin/Permissions/view.ctp:22
+#: Template/Admin/Posts/view.ctp:26
+msgid "Category"
+msgstr ""
+
+#: Template/Admin/PostImages/add.ctp:4
+#: Template/Admin/PostImages/edit.ctp:10
+#: Template/Admin/PostImages/view.ctp:6
+#: Template/Admin/Posts/add.ctp:9
+#: Template/Admin/Posts/edit.ctp:15
+#: Template/Admin/Posts/index.ctp:9
+#: Template/Admin/Posts/view.ctp:12
+#: Template/Posts/tags.ctp:9
+msgid "List Post Images"
+msgstr ""
+
+#: Template/Admin/PostImages/add.ctp:12
+msgid "Add Post Image"
+msgstr ""
+
+#: Template/Admin/PostImages/edit.ctp:18
+#: Template/Admin/PostImages/view.ctp:4
+msgid "Edit Post Image"
+msgstr ""
+
+#: Template/Admin/PostImages/index.ctp:4
+#: Template/Admin/PostImages/view.ctp:7
+#: Template/Admin/Posts/add.ctp:10
+#: Template/Admin/Posts/edit.ctp:16
+#: Template/Admin/Posts/index.ctp:10
+#: Template/Admin/Posts/view.ctp:13
+#: Template/Posts/tags.ctp:10
+msgid "New Post Image"
+msgstr ""
+
+#: Template/Admin/PostImages/index.ctp:10
+msgid "Post Images"
+msgstr ""
+
+#: Template/Admin/PostImages/view.ctp:5
+msgid "Delete Post Image"
+msgstr ""
+
+#: Template/Admin/PostImages/view.ctp:16
+#: Template/Admin/PostTags/view.ctp:18
+msgid "Post"
+msgstr ""
+
+#: Template/Admin/PostImages/view.ctp:20
+#: Template/Admin/Posts/view.ctp:63
+msgid "Image Id"
+msgstr ""
+
+#: Template/Admin/PostTags/add.ctp:4
+#: Template/Admin/PostTags/edit.ctp:10
+#: Template/Admin/PostTags/view.ctp:6
+#: Template/Admin/Posts/add.ctp:11
+#: Template/Admin/Posts/edit.ctp:17
+#: Template/Admin/Posts/index.ctp:11
+#: Template/Admin/Posts/view.ctp:14
+#: Template/Admin/Tags/add.ctp:5
+#: Template/Admin/Tags/edit.ctp:11
+#: Template/Admin/Tags/index.ctp:5
+#: Template/Admin/Tags/view.ctp:8
+#: Template/Posts/tags.ctp:11
+#: Template/Tags/index.ctp:5
+#: Template/Tags/view.ctp:8
+msgid "List Post Tags"
+msgstr ""
+
+#: Template/Admin/PostTags/add.ctp:7
+#: Template/Admin/PostTags/edit.ctp:13
+#: Template/Admin/PostTags/index.ctp:7
+#: Template/Admin/PostTags/view.ctp:10
+#: Template/Admin/Tags/add.ctp:4
+#: Template/Admin/Tags/edit.ctp:10
+#: Template/Admin/Tags/view.ctp:6
+#: Template/Tags/view.ctp:6
+msgid "List Tags"
+msgstr ""
+
+#: Template/Admin/PostTags/add.ctp:8
+#: Template/Admin/PostTags/edit.ctp:14
+#: Template/Admin/PostTags/index.ctp:8
+#: Template/Admin/PostTags/view.ctp:11
+#: Template/Admin/Tags/index.ctp:4
+#: Template/Admin/Tags/view.ctp:7
+#: Template/Tags/index.ctp:4
+#: Template/Tags/view.ctp:7
+msgid "New Tag"
+msgstr ""
+
+#: Template/Admin/PostTags/add.ctp:14
+msgid "Add Post Tag"
+msgstr ""
+
+#: Template/Admin/PostTags/edit.ctp:20
+#: Template/Admin/PostTags/view.ctp:4
+msgid "Edit Post Tag"
+msgstr ""
+
+#: Template/Admin/PostTags/index.ctp:4
+#: Template/Admin/PostTags/view.ctp:7
+#: Template/Admin/Posts/add.ctp:12
+#: Template/Admin/Posts/edit.ctp:18
+#: Template/Admin/Posts/index.ctp:12
+#: Template/Admin/Posts/view.ctp:15
+#: Template/Admin/Tags/add.ctp:6
+#: Template/Admin/Tags/edit.ctp:12
+#: Template/Admin/Tags/index.ctp:6
+#: Template/Admin/Tags/view.ctp:9
+#: Template/Posts/tags.ctp:12
+#: Template/Tags/index.ctp:6
+#: Template/Tags/view.ctp:9
+msgid "New Post Tag"
+msgstr ""
+
+#: Template/Admin/PostTags/index.ctp:12
+msgid "Post Tags"
+msgstr ""
+
+#: Template/Admin/PostTags/view.ctp:5
+msgid "Delete Post Tag"
+msgstr ""
+
+#: Template/Admin/PostTags/view.ctp:22
+msgid "Tag"
+msgstr ""
+
+#: Template/Admin/Posts/add.ctp:18
+msgid "Add Post"
+msgstr ""
+
+#: Template/Admin/Posts/add.ctp:29;32
+#: Template/Admin/Posts/edit.ctp:35;38
+#: Template/Admin/Tags/index.ctp:10
+#: Template/Layout/Admin/default.ctp:57
+#: Template/Tags/index.ctp:10
+msgid "Tags"
+msgstr ""
+
+#: Template/Admin/Posts/edit.ctp:24
+#: Template/Admin/Posts/view.ctp:4
+msgid "Edit Post"
+msgstr ""
+
+#: Template/Admin/Posts/index.ctp:16
+#: Template/Layout/Admin/default.ctp:48
+#: Template/Posts/tags.ctp:16
+msgid "Posts"
+msgstr ""
+
+#: Template/Admin/Posts/view.ctp:5
+msgid "Delete Post"
+msgstr ""
+
+#: Template/Admin/Posts/view.ctp:59
+msgid "Related Post Images"
+msgstr ""
+
+#: Template/Admin/Posts/view.ctp:64;88
+#: Template/Admin/Tags/view.ctp:37
+#: Template/Tags/view.ctp:37
+msgid "Post Id"
+msgstr ""
+
+#: Template/Admin/Posts/view.ctp:84
+#: Template/Admin/Tags/view.ctp:33
+#: Template/Tags/view.ctp:33
+msgid "Related Post Tags"
+msgstr ""
+
+#: Template/Admin/Posts/view.ctp:89
+#: Template/Admin/Tags/view.ctp:38
+#: Template/Tags/view.ctp:38
+msgid "Tag Id"
+msgstr ""
+
+#: Template/Admin/Tags/add.ctp:12
+msgid "Add Tag"
+msgstr ""
+
+#: Template/Admin/Tags/edit.ctp:18
+#: Template/Admin/Tags/view.ctp:4
+#: Template/Tags/view.ctp:4
+msgid "Edit Tag"
+msgstr ""
+
+#: Template/Admin/Tags/view.ctp:5
+#: Template/Tags/view.ctp:5
+msgid "Delete Tag"
+msgstr ""
+
+#: Template/Admin/Users/add.ctp:14
+msgid "Add User"
+msgstr ""
+
+#: Template/Admin/Users/edit.ctp:20
+#: Template/Admin/Users/view.ctp:4
+#: Template/Users/view.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: Template/Admin/Users/index.ctp:12
+#: Template/Layout/Admin/default.ctp:51
+#: Template/Users/index.ctp:12
+msgid "Users"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:4
+msgid "Please enter your email and password"
+msgstr ""
+
+#: Template/Admin/Users/login.ctp:8
+msgid "Login"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:5
+#: Template/Users/view.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:18
+#: Template/Users/view.ctp:18
+msgid "Email"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:22
+#: Template/Users/view.ctp:26
+msgid "Name"
+msgstr ""
+
+#: Template/Admin/Users/view.ctp:30
+#: Template/Users/view.ctp:34
+msgid "Type"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/Layout/Admin/default.ctp:61
+msgid "Open site"
+msgstr ""
+
+#: Template/Layout/Admin/default.ctp:62
+msgid "Logout"
+msgstr ""
+
+#: Template/Users/view.ctp:22
+msgid "Password"
+msgstr ""
+
