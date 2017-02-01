@@ -74,7 +74,7 @@ class PostImagesController extends AdminController
               $this->Flash->error(__('You can\'t upload this type of file.'));
             }
         }
-        $posts = $this->PostImages->Posts->find('list', ['limit' => 200]);
+        $posts = $this->PostImages->Posts->find('list');
         $this->set(compact('postImage', 'posts'));
         $this->set('_serialize', ['postImage']);
     }

@@ -98,12 +98,20 @@ class CategoriesController extends AdminController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $category = $this->Categories->get($id);
-        if ($this->Categories->delete($category)) {
-            $this->Flash->success(__('The category has been deleted.'));
+        if ($id > 1) {
+          $this->request->allowMethod(['post', 'delete']);
+          $category = $this->Categories->get($id, ['contain' => ['Posts']]);
+          if (empty($category->posts)) {
+            if ($this->Categories->delete($category)) {
+                $this->Flash->success(__('The category has been deleted.'));
+            } else {
+                $this->Flash->error(__('The category could not be deleted. Please, try again.'));
+            }
+          } else {
+            $this->Flash->error(__('The category could not be deleted. You have posts assigned to this category.'));
+          }
         } else {
-            $this->Flash->error(__('The category could not be deleted. Please, try again.'));
+          $this->Flash->error(__('The category could not be deleted. It\'s the parent category.'));
         }
 
         return $this->redirect(['action' => 'index']);
